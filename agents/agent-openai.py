@@ -123,7 +123,7 @@ if repo != "no repo found":
                     else:
                         message.pretty_print()
 
-            inputs = {"messages": [("user", f"clone the repo {repo}, and follow the instructions in the readme file")]}
+            inputs = {"messages": [("user", f"clone this repository {repo}. The repository is associated with a research project, follow the instructions in the readme file to run the code and reproduce the results.")]}
 
             print_stream(graph.stream(inputs, stream_mode="values"))
         else:
