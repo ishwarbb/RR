@@ -95,7 +95,7 @@ if repo != "no repo found":
             def docker_ubuntu_terminal(
                 code: str
             ):
-                """This is an ubuntu command line in a docker container, use this to execute command line instructions. use apt-get install -y to install packages. Write and execute python code by writing to and executing a file. Use pip install to install python packages, for example, to install the json package, the command is: 'pip install json' never use exclamation marks when issuing commands like git or pip or any other command, use pip instead of !pip and git instead of !git."""
+                """This is an ubuntu command line running in a docker container, use this to execute command line instructions. use apt-get install -y to install packages. Write and execute python code by writing to and executing a file. Use pip install to install python packages, for example, to install the json package, the command is: 'pip install json' never use exclamation marks when issuing commands like git or pip or any other command, use pip instead of !pip and git instead of !git."""
                 try:
                     blk = CodeBlock(
                         code=code,
